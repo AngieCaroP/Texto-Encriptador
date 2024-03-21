@@ -1,0 +1,254 @@
+/**{
+    background:#F3F5FC ;
+    font-family: "Bubbler One", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.logo{
+   margin left:5px;
+   padding-top:5px;
+   width:10%;
+}
+
+main{
+    display: flex;
+    margin: 5px;
+    margin-left: 100px;
+}
+
+.text-area{
+    border: none;
+    color: #0A3871 ;
+    text-transform: lowercase;
+}
+
+::placeholder{
+    color: #0A3871;
+} .text-area{
+    outline: none;
+}
+
+.mensaje{
+    background: white;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color:  #0A3871;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: fit-content;
+}
+
+.muñeco{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -300px;
+}
+
+.campo-mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: -30px;
+}
+
+.btnDesencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btnEncriptar{
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    
+}
+
+.copiar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 50px;
+   
+    position: absolute;
+    width: 336px;
+}
+
+.pegar{
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 50px;
+    margin-top: 90px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion{
+    color: #2f353b;
+    font-size: 25px;
+
+}
+*/
+
+* {
+    background-image: url(Imagenes/abstract-background-flat-design-260nw-2134020729.jpg); /* URL de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
+    background-attachment: fixed;
+    font-family: "Bubbler One", sans-serif;
+    font-weight: 800; /* Letras más gruesas */
+    font-size: 36px; /* Tamaño de letra aumentado */
+    line-height: 100%; /* Espaciado entre líneas */
+}
+
+.logo {
+    margin-left: 5px;
+    padding-top: 5px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.text-area {
+    background: #bddce362;
+    border: 2px solid #8a2ba0; /* Añade un borde sólido de 2px de ancho en color morado pastel */
+    color: #706e70; /* Morado pastel */
+    text-transform: lowercase;
+    
+}
+
+::placeholder {
+    color: #471952; /* Morado pastel */
+}
+
+.text-area {
+    outline: none;
+}
+
+.mensaje {
+    background: #bddce37e; /* Azul claro pastel */
+    background-repeat: no-repeat;
+    border: 2px solid #8a2ba0; /* Añade un borde sólido de 2px de ancho en color morado pastel */
+    border-radius: 24px;
+    color: #8f6b97; /* Morado pastel */
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-shadow: 1px 1px 3px #fff, 0px 0px 3px #fff; /* Relieve a las letras */
+    animation: moveMessage 1s ease infinite alternate; /* Movimiento al mensaje */
+}
+
+@keyframes moveMessage {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.muñeco {
+    position: absolute;
+    top: 130px; /* Ajusta estas coordenadas según sea necesario */
+    left: 190%; /* Ajusta estas coordenadas según sea necesario */
+    transform: translateX(-50%);
+    z-index: 1; /* Asegura que esté por encima del área de mensaje */
+    animation: moveMuñeco 2s ease infinite alternate; /* Movimiento al muñeco */
+}
+
+@keyframes moveMuñeco {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.campo-mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: -30px;
+}
+
+.btnDesencriptar,
+.btnEncriptar,
+.copiar,
+.pegar {
+    border: 1px solid #0a3871; /* Azul oscuro */
+    border-radius: 24px;
+    color: #0a3871; /* Azul oscuro */
+    cursor: pointer;
+    height: 57px;
+    margin-left: 10px;
+    width: 200px;
+    text-shadow: 1px 1px 3px #1f7908, 0px 0px 3px #fff; /* Relieve a las letras */
+    animation: moveButton 1s ease infinite alternate; /* Movimiento a los botones */
+}
+
+@keyframes moveButton {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.btnEncriptar {
+    background: #bddce3; /* Naranja pastel */
+}
+
+.btnDesencriptar {
+    background: #d4f3e3; /* Verde claro pastel */
+}
+
+.copiar {
+    background: #d4f3e3; /* Verde claro pastel */
+    margin-left:20px;
+}
+
+.pegar {
+    background: #bddce3; /* Naranja pastel */
+}
+
+.informacion {
+    color: #424040; /* Gris oscuro */
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 10px; /* Ajuste para subir el texto */
+    
+}

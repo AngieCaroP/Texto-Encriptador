@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Imagenes/Frame6.png" alt="logo de Alura"></img>
+    </header>
+
+    <main class="main">
+       <section>
+            <textarea class="text-area" id="texto-area"  cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar </button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="campo-mensaje">
+            <textarea id="campo-mensaje" class="mensaje" cols="20" rows="10"></textarea>
+            <img src="Imagenes/Muñeco.png" class="muñeco"  alt="Muñeco">
+            <div>
+                
+                <button class="copiar" onclick="copiarMensaje()">Copiar</button>
+                <button class="pegar" onclick="pegarMensaje() ">Pegar</button>
+            </div>
+        </section>
+    </main>
+    <script src="scrip.js"></script>
+</body>
+</html>
