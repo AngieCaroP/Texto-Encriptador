@@ -1,7 +1,47 @@
-<h>Texto Encriptador</h>
+<a name="readme-top"></a>
 
-Descripción
+# Texto Encriptador Alura
 
-El Texto Encriptador es una aplicación web que surge como la solución al desafío planteado por Alura para codificar y decodificar mensajes de manera segura. 
+> El Texto Encriptado ha sido desarrollado para abordar el desafío planteado por Alura, ofreciendo un método seguro para codificar y descifrar mensajes de manera confiable. Inspirado en una estética de tonos pasteles, además se han ampliado las funcionalidades de los botones de copiar y pegar.
 
-Proyecto terminado 
+## Tecnologías Utilizadas
+
+- Html
+- Css
+- JavaScript
+
+
+## Live Demo (Enlace)
+
+[Repositorio](https://angiecarop.github.io/Texto-Encriptador/)
+
+## Install
+
+Clona el repositorio: (https://angiecarop.github.io/Texto-Encriptador/)
+Abre (index.html) en tu navegador.
+
+### Prerequisites
+
+--Node 
+--Npm 
+--Composer 
+--Text editor (VsCode)
+
+
+
+### Uso
+
+Ingresa el mensaje secreto en el área de texto.
+Haz clic en "Encriptar" o "Desencriptar" según sea necesario.
+Copia el resultado si es necesario.
+
+
+
+## Authors
+
+👤 *Carolina Pantoja**
+
+- GitHub: [@user](https://github.com/AngieCaroP)
+- LinkedIn: [LinkedIn]([https://www.linkedin.com/in/user/](https://www.linkedin.com/in/carolina-pantoja-716184144/)https://www.linkedin.com/in/carolina-pantoja-716184144/)
+
+
