@@ -2,7 +2,7 @@
 
 # Texto Encriptador Alura
 
-> El Texto Encriptado ha sido desarrollado para abordar el desafío planteado por Alura, ofreciendo un método seguro para codificar y descifrar mensajes de manera confiable. Inspirado en una estética de tonos pasteles, además se han ampliado las funcionalidades de los botones de copiar y pegar.
+El Texto Encriptado ha sido desarrollado para abordar el desafío planteado por Alura, ofreciendo un método seguro para codificar y descifrar mensajes de manera confiable. Inspirado en una estética de tonos pasteles, además se han ampliado las funcionalidades de los botones de copiar y pegar.
 
 ## Tecnologías Utilizadas
 
@@ -30,9 +30,9 @@ Abre (index.html) en tu navegador.
 
 ### Uso
 
--Ingresa el mensaje secreto en el área de texto.
--Haz clic en "Encriptar" o "Desencriptar" según sea necesario.
--Copia el resultado si es necesario.
+- Ingresa el mensaje secreto en el área de texto.
+- Haz clic en "Encriptar" o "Desencriptar" según sea necesario.
+- Copia el resultado si es necesario.
 
 
 
