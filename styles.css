@@ -115,59 +115,73 @@ main{
 }
 */
 
+/* Estilos generales para todo el texto */
 * {
     background-image: url(Imagenes/abstract-background-flat-design-260nw-2134020729.jpg); /* URL de la imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
-    background-attachment: fixed;
-    font-family: "Bubbler One", sans-serif;
+    background-attachment: fixed; /* Fija la imagen de fondo para que permanezca en su lugar mientras se desplaza la página */
+    font-family: "Bubbler One", sans-serif; /* Tipo de Letras */
     font-weight: 800; /* Letras más gruesas */
-    font-size: 36px; /* Tamaño de letra aumentado */
+    font-size: 25px; /* Tamaño de letra aumentado */
     line-height: 100%; /* Espaciado entre líneas */
 }
 
+/* Estilos para el logo */
 .logo {
-    margin-left: 5px;
-    padding-top: 5px;
-    width: 10%;
+    margin-left: 5px; /* Margen izquierdo */
+    padding-top: 5px; /* Relleno superior */
+    width: 10%; /* Ancho */
 }
 
+/* Estilos para el contenedor principal */
 main {
-    display: flex;
-    margin: auto;
-    margin-left: 100px;
+    display: flex; /* Convierte el contenedor en un contenedor flexible */
+    margin: auto; /* Margen automático (centrado horizontal) */
+    margin-left: 100px; /* Margen izquierdo adicional */
 }
 
+/* Estilos para el área de texto */
 .text-area {
-    background: #bddce362;
-    border: 2px solid #8a2ba0; /* Añade un borde sólido de 2px de ancho en color morado pastel */
-    color: #706e70; /* Morado pastel */
-    text-transform: lowercase;
-    
+    background: #cfcba941; /* Color de fondo */
+    border: none; /* Añade un borde sólido de 2px de ancho en color morado pastel */
+    color: #424040; /*  color de letras */
+    text-transform: lowercase; /* Transforma el texto a minúsculas */
+    margin-left: -20px; /* Margen izquierdo */
+    width: 70%; /* Ajusta el ancho al contenido */
+    padding: 70px;
 }
 
+/* Estilos para el marcador de posición */
 ::placeholder {
-    color: #471952; /* Morado pastel */
+    color: #424040; /* Color del marcador de posición */
 }
 
+/* Elimina el resaltado al hacer clic */
 .text-area {
-    outline: none;
+    outline: none;  
 }
 
+/* Estilos para el área de mensaje */
 .mensaje {
-    background: #bddce37e; /* Azul claro pastel */
+    background: #94917b34; /* Color de fondo */
     background-repeat: no-repeat;
-    border: 2px solid #8a2ba0; /* Añade un borde sólido de 2px de ancho en color morado pastel */
-    border-radius: 24px;
-    color: #8f6b97; /* Morado pastel */
+    border: navajowhite;; /* Añade un borde sólido de 2px de ancho en color  pastel */
+    border-radius: 20px; /* Bordes redondeados */
+    color: #424040; /* Color de letras */
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    text-shadow: 1px 1px 3px #fff, 0px 0px 3px #fff; /* Relieve a las letras */
-    animation: moveMessage 1s ease infinite alternate; /* Movimiento al mensaje */
+    width: 70%; /* Ajusta el ancho al contenido */
+    padding: 95px;
+    /*text-shadow: 1px 1px 3px #fff, 0px 0px 3px #fff;  Relieve a las letras, Sombra del texto */
+    animation: moveMessage 1s ease infinite alternate; /* Movimiento o animación al mensaje */
+    margin-left: 30px; /* Margen izquierdo */
+   
+   
 }
 
+/* Animación para el movimiento del mensaje */
 @keyframes moveMessage {
     0% {
         transform: translateY(0);
@@ -177,48 +191,72 @@ main {
     }
 }
 
+/* Estilos para el muñeco */
 .muñeco {
     position: absolute;
-    top: 130px; /* Ajusta estas coordenadas según sea necesario */
-    left: 190%; /* Ajusta estas coordenadas según sea necesario */
+    top: 32%; /* Ajusta estas coordenadas a lo largo */
+    left: 61%; /* Ajusta estas coordenadas a lo ancho */
     transform: translateX(-50%);
     z-index: 1; /* Asegura que esté por encima del área de mensaje */
-    animation: moveMuñeco 2s ease infinite alternate; /* Movimiento al muñeco */
+    animation: moveMuñeco 1s ease infinite alternate; /* Movimiento al muñeco */
+    background: #94917b00;
 }
 
+/* Animación para el movimiento del muñeco */
 @keyframes moveMuñeco {
     0% {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-5px);
     }
 }
 
+/* Elimina el resaltado al hacer clic en el área de mensaje */
 .campo-mensaje:focus {
     outline: none;
 }
 
+/* Estilos para los botones */
 .botones {
     display: flex;
     margin-top: -30px;
+    margin-left:45px; /* Margen izquierdo */
+}
+
+.copi{
+    display: flex;
+    margin-top: 10px; /* Margen espaciado */
+    margin-left:120px; /* Margen izquierdo */
 }
 
 .btnDesencriptar,
-.btnEncriptar,
-.copiar,
-.pegar {
-    border: 1px solid #0a3871; /* Azul oscuro */
-    border-radius: 24px;
-    color: #0a3871; /* Azul oscuro */
-    cursor: pointer;
-    height: 57px;
-    margin-left: 10px;
-    width: 200px;
+.btnEncriptar{
+    border: 1px solid #0a3871; /* Borde sólido */
+    border-radius: 24px; /* Bordes redondeados */
+    color: #0a3871; /* Azul oscuro *//* Color del texto */
+    cursor: pointer; 
+    height: 42px;/* Altura del botón */
+    margin-left: 20px; 
+    width: 150px; /* Ancho del botón */
     text-shadow: 1px 1px 3px #1f7908, 0px 0px 3px #fff; /* Relieve a las letras */
     animation: moveButton 1s ease infinite alternate; /* Movimiento a los botones */
 }
 
+.copiar,
+.pegar {
+    border: 1px solid #0a3871; /* Borde sólido */
+    border-radius: 24px; /* Bordes redondeados */
+    color: #0a3871; /* Azul oscuro *//* Color del texto */
+    cursor: pointer; 
+    height: 42px;/* Altura del botón */
+    margin-left: 20px; 
+    width: 120px; /* Ancho del botón */
+    text-shadow: 1px 1px 3px #1f7908, 0px 0px 3px #fff; /* Relieve a las letras */
+    animation: moveButton 1s ease infinite alternate; /* Movimiento a los botones */
+}
+
+/* Animación para el movimiento de los botones */
 @keyframes moveButton {
     0% {
         transform: translateY(0);
@@ -228,27 +266,77 @@ main {
     }
 }
 
+/* Estilos para el botón "Encriptar" */
 .btnEncriptar {
-    background: #bddce3; /* Naranja pastel */
+    background: #bddce3; /*Color de fondo  */
 }
 
+/* Estilos para el botón "Desencriptar" */
 .btnDesencriptar {
-    background: #d4f3e3; /* Verde claro pastel */
+    background: #d4f3e3; /* Color de fondo Verde claro pastel */
 }
 
+/* Estilos para el botón "Copiar" */
 .copiar {
-    background: #d4f3e3; /* Verde claro pastel */
+    background: #d4f3e3; /* Color de fondo Verde claro pastel */
     margin-left:20px;
 }
 
+/* Estilos para el botón "Pegar" */
 .pegar {
-    background: #bddce3; /* Naranja pastel */
+    background: #bddce3; /* Color de */
 }
 
+/* Estilos para la información */
 .informacion {
-    color: #424040; /* Gris oscuro */
+    color: #424040; /*Color del texto Gris oscuro */
     font-size: 25px;
     margin-left: 50px;
     margin-top: 10px; /* Ajuste para subir el texto */
     
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    /* Ajustes generales para dispositivos medianos */
+    .main {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .text-area, .mensaje {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .copi {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+@media screen and (max-width: 488px) {
+    /* Ajustes específicos para dispositivos pequeños */
+    .text-area, .mensaje {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .botones, .copi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnDesencriptar, .btnEncriptar, .copiar, .pegar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 20%; /* Redimensiona el tamaño del logo en dispositivos pequeños */
+    }
 }

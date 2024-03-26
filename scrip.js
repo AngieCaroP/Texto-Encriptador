@@ -14,7 +14,7 @@ function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    muñecoImagen.style.display = "none"; // Ocultar la imagen
+    muñecoImagen.style.display = "none"; // Oculta el muñeco al encriptar el mensaje
 }
 
 function encriptar(stringEncriptado) {
@@ -47,6 +47,15 @@ function desencriptar(stringDesencriptado) {
     return stringDesencriptado;
 }
 
+// Función para deshabilitar la escritura en el textarea del mensaje
+function deshabilitarEscrituraMensaje() {
+    mensaje.disabled = true;
+}
+
+// Llama a la función para deshabilitar la escritura en el textarea del mensaje
+deshabilitarEscrituraMensaje();
+
+
 function copiarMensaje() {
     mensaje.select();
     document.execCommand("copy");
@@ -56,7 +65,14 @@ botonCopiar.addEventListener("click", copiarMensaje);
 function pegarTexto() {
     navigator.clipboard.readText().then((textoPegado) => {
         document.getElementById("texto-area").value = textoPegado;
+         muñecoImagen.style.display = "none"; // Oculta el muñeco al pegar texto en el área de mensaje
     });
 }
 
+
 botonPegar.addEventListener("click", pegarTexto);
+
+// Ocultar el muñeco cuando se hace clic en el área de mensaje
+mensaje.addEventListener("click", function() {
+    muñecoImagen.style.display = "none";
+});
