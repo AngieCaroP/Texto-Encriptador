@@ -11,6 +11,10 @@
 - JavaScript
 
 
+# Imagen
+![image](https://github.com/AngieCaroP/Texto-Encriptador/assets/164052307/f4376892-a159-4a3f-bb97-97a1a7b474c0)
+
+
 ## Install
 
 Clona el repositorio: (https://angiecarop.github.io/Texto-Encriptador/)
@@ -19,9 +23,9 @@ Abre (index.html) en tu navegador.
 
 ### Prerequisites
 
--Node 
--Npm 
--Text editor (VsCode)
+- Node 
+- Npm 
+- Text editor (VsCode)
 
 
 ### Uso
@@ -32,7 +36,7 @@ Abre (index.html) en tu navegador.
 
 
 
-## Authors
+## Autora
 
 👤 *Carolina Pantoja**
 
