@@ -117,7 +117,7 @@ main{
 
 /* Estilos generales para todo el texto */
 * {
-    background-image: url(Imagenes/abstract-background-flat-design-260nw-2134020729.jpg); /* URL de la imagen */
+    background-image: url(imagenes/abstract-background-flat-design-260nw-2134020729.jpg); /* URL de la imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
