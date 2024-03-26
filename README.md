@@ -11,29 +11,24 @@
 - JavaScript
 
 
-## Live Demo (Enlace)
-
-[Repositorio](https://angiecarop.github.io/Texto-Encriptador/)
-
 ## Install
 
 Clona el repositorio: (https://angiecarop.github.io/Texto-Encriptador/)
 Abre (index.html) en tu navegador.
 
+
 ### Prerequisites
 
---Node 
---Npm 
---Composer 
---Text editor (VsCode)
-
+-Node 
+-Npm 
+-Text editor (VsCode)
 
 
 ### Uso
 
-Ingresa el mensaje secreto en el área de texto.
-Haz clic en "Encriptar" o "Desencriptar" según sea necesario.
-Copia el resultado si es necesario.
+-Ingresa el mensaje secreto en el área de texto.
+-Haz clic en "Encriptar" o "Desencriptar" según sea necesario.
+-Copia el resultado si es necesario.
 
 
 
@@ -41,7 +36,7 @@ Copia el resultado si es necesario.
 
 👤 *Carolina Pantoja**
 
-- GitHub: [@user](https://github.com/AngieCaroP)
-- LinkedIn: [LinkedIn]([https://www.linkedin.com/in/user/](https://www.linkedin.com/in/carolina-pantoja-716184144/)https://www.linkedin.com/in/carolina-pantoja-716184144/)
+- GitHub: [@AngieCaroP](https://github.com/AngieCaroP)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/carolina-pantoja-716184144/)
 
 
